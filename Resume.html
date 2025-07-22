@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Resume</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <div class="nav-container">
+    <div class="brand">PORTFOLIO</div>
+    <nav>
+      <ul>
+        <li><a href="/Home.html">Home</a></li>
+        <li><a href="/About.html">About Me</a></li>
+        <li><a href="/Projects.html">Projects</a></li>
+        <li><a href="/Skills.html">Skills</a></li>
+        <li><a href="/Resume.html">Resume</a></li>
+        <li><a href="/Contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+
+  <div class="resume-container">
+    <h1>My Resume</h1>
+
+    <div class="resume-section" onclick="toggleSection('profile')">
+      <h2>👤 Profile</h2>
+      <div id="profile" class="resume-content">
+        <p>Self-motivated and detail-oriented Computer Science student with a strong foundation in web development and a passion for learning.</p>
+      </div>
+    </div>
+
+    <div class="resume-section" onclick="toggleSection('education')">
+      <h2>🎓 Education</h2>
+      <div id="education" class="resume-content">
+        <ul>
+          <li><strong>BSCS</strong> — FUUAST, Islamabad</li>
+          <li><strong>ICS</strong> — Pride Science College Talagang</li>
+          <li><strong>Matric</strong> — Makkah Cadet School Talagang</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="resume-section" onclick="toggleSection('skills')">
+      <h2>🛠️ Technical Skills</h2>
+      <div id="skills" class="resume-content">
+        <ul>
+          <li>HTML5, CSS3, Bootstrap</li>
+          <li>JavaScript (Basic), PHP (Basic)</li>
+          <li>MySQL, GitHub, XAMPP</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="resume-section" onclick="toggleSection('projects')">
+      <h2>📁 Projects</h2>
+      <div id="projects" class="resume-content">
+        <ul>
+          <li>Authentication Pages – Login/Signup system</li>
+          <li>Mobile Website – Fully responsive mobile layout</li>
+          <li>Electrician & Plumbing Website – Service layout</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="resume-section" onclick="toggleSection('experience')">
+      <h2>💼 Experience</h2>
+      <div id="experience" class="resume-content">
+        <ul>
+          <li><strong>Feontend web Developer</strong> — Radiant Spark Technology Adiyala Road RWP (June–Oct 2024).</li>
+        </ul>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.style.display = section.style.display === 'block' ? 'none' : 'block';
+    }
+  </script>
+
+</body>
+
+</html>
